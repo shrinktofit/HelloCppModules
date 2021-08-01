@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "configurePresets": [
+        {
+            "name": "Ninja-MSVC-x64-Debug",
+            "displayName": "Visual Studio Community 2019 Release - amd64",
+            "description": "Using compilers for Visual Studio 16 2019 (x64 architecture)",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "X:\\Development\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake",
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/install/${presetName}",
+                "CMAKE_CXX_COMPILER": "cl.exe"
+            }
+        }
+    ]
+}
